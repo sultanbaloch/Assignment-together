@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>if and else if statements</h1>
+
+
+    <form action="#" onsubmit=" return submit1()">
+    Your Age : <input type="number" id="age">
+    Your Height : <input type="number" id="height">
+    Your Nationality : <input type="text" id="nationality">
+   <select name="" id="education">
+       <option value="" >Education</option>
+       <option value="matric">Matric</option>
+       <option value="inter">Inter</option>
+       <option value="graduation">Graduation</option>
+       <option value="master">Master</option>
+   </select>
+   <button >Submit</button>
+   
+</form>
+<h1 id="result"></h1>
+
+
+<h1>Army Requirement Form</h1>
+
+<form action="#" onsubmit=" return submit2()">
+    Your Age : <input type="number" id="age1">
+    Your Height : <input type="number" id="height1">
+    Your Nationality : <input type="text" id="nationality1">
+   <select name="" id="education1">
+       <option value="" >Education</option>
+       <option value="matric">Matric</option>
+       <option value="inter">Inter</option>
+       <option value="graduation">Graduation</option>
+       <option value="master">Master</option>
+   </select>
+   <button >Submit</button>
+   
+</form>
+<h1 id="submit"></h1> 
+
+
+
+    <script>
+function submit1() {
+    let age = document.getElementById("age").value
+    let height = document.getElementById("height").value
+    let nationality = document.getElementById("nationality").value
+    let education = document.getElementById("education").value
+    let result = document.getElementById("result")
+
+    if ((age > 17 && age < 23 || education === "master" && age <= 28) && height >= 5.5 && nationality === "pakistan" || nationality === "Pakistan" ) {
+        result.innerHTML= "You are Pass"
+    }else {
+        result.innerHTML = "you are fail"
+    }return  false
+
+
+
+}
+
+
+
+
+
+function submit2() {
+    let age1 = document.getElementById("age1").value
+    let height1 = document.getElementById("height1").value
+    let nationality1 = document.getElementById("nationality1").value
+    let education1 = document.getElementById("education1").value
+    let submit = document.getElementById("submit")
+
+
+    if (nationality1 === "pakistan" && height1 >= 5.5) {
+        if ((age1 >= 18 && age1 <= 22) || (age1 >= 18 && age1 <= 28 && education1 === "master")){
+            submit.innerHTML = " congratulation"
+        }else {
+            submit.innerHTML = "Sorry you are not eligible"
+        }
+    } else {
+        submit.innerHTML = "Sorry you are not eligible"
+    }return false
+
+
+}
+    </script>
+    
+</body>
+</html>

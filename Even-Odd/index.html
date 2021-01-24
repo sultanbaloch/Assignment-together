@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even and odd data</title>
+</head>
+
+<body>
+
+    <form action="#" onsubmit="getNumber1()">
+        <h2>Add a number</h2>
+        <input type="number" placeholder="Enter anynumber" id="userinput">
+        <button>Add</button>
+    </form>
+<P id="addnumber"></P>
+    <button onclick="getNumber2()">Arrangment</button>
+
+    <h1>Even</h1>
+    <p id="evennumber"></p>
+
+    <h1>Odd</h1>
+    <p id="oddnumber"></p>
+
+
+    <script>
+
+        let arr = [];
+        let odd = [];
+        let even = [];
+
+
+        function getNumber1() {
+            const a = document.getElementById("userinput").value ;
+            arr.push(a)
+            document.getElementById("addnumber").innerHTML = arr;
+            document.getElementById("userinput").value = "";
+        }
+
+        function getNumber2() {
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 === 0) {
+                    odd.push(arr[i])
+                    document.getElementById("evennumber").innerHTML = odd;
+                }
+                else {
+                    even.push(arr[i])
+                    document.getElementById("oddnumber").innerHTML = even;
+
+                }
+
+            }
+        }
+
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>

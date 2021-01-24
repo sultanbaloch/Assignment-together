@@ -1,0 +1,63 @@
+#container{
+text-align:center;
+margin: 100px auto;
+height: 300px;
+width: 200px;
+border: 5px solid black;
+line-height: 20px;
+font-size: 30px;
+background-color: teal;
+}
+
+
+
+
+#addition{
+    border: 2px saddlebrown;
+    border-radius: 50%;
+    background-color: darkred;
+    color: blanchedalmond;
+    margin: 5px;
+   
+}
+
+#subtraction{
+
+    border: 2px saddlebrown;
+    border-radius: 50%;
+    background-color: darkblue;
+    color: blanchedalmond;
+    margin: 5px;
+}
+
+#multiplication{
+    border: 2px saddlebrown;
+    border-radius: 50%;
+    background-color: darkslateblue;
+    color: blanchedalmond;
+    margin: 5px;
+
+}
+
+
+#division{
+    border: 2px saddlebrown;
+    border-radius: 50%;
+    background-color:darkorange;
+    color: blanchedalmond;
+    margin: 5px;
+    
+}
+
+#result{
+    font-size: 20px;
+    position: absolute;
+    margin-top: auto;
+    
+}
+
+#data{
+    font-size: 20px;
+    color: wheat;
+}
+
